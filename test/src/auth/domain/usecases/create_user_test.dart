@@ -1,10 +1,8 @@
-import 'package:clean_architecture_bloc/src/auth/domain/repositories/auth_repository.dart';
 import 'package:clean_architecture_bloc/src/auth/domain/usecases/create_user.dart';
 import 'package:dartz/dartz.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:mocktail/mocktail.dart';
-
-class MockAuthRepository extends Mock implements AuthRepository {}
+import 'authentication_repository.mock.dart';
 
 void main() {
   //
