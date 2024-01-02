@@ -9,6 +9,7 @@ abstract class AuthRepository {
   const AuthRepository();
 
   /// create a user `contract`
+  ///
   /// in here, we are saying this returns the Failure in the right, bcz in domain layer we are not sure
   /// what the failure is, it could be a network failure or a server failure
   /// so, actual failure is implemented in the data layer

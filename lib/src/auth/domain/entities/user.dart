@@ -9,9 +9,16 @@ class User extends Equatable {
     required this.avatar,
   });
 
-  final String id;
+  /// empty `User` object
+  const User.empty()
+      : id = 0,
+        name = '_empty_name',
+        createdAt = '_empty_createdAt',
+        avatar = '_empty_avatar';
+
+  final int id;
   final String name;
-  final DateTime createdAt;
+  final String createdAt;
   final String avatar;
 
   // we only check for id, if this is same, then we consider them as same user
