@@ -9,6 +9,9 @@ abstract interface class Failure extends Equatable {
   final String message;
   final int statusCode;
 
+  /// getter
+  String get errorMessage => '$statusCode: Error: $message';
+
   @override
   List<Object?> get props => [message, statusCode];
 }

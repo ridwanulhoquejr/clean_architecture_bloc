@@ -22,6 +22,10 @@ class AuthRepositoryImpl implements AuthRepository {
     required String avatar,
   }) async {
     try {
+      print('------------------------------------');
+      print('AuthRepositoryImpl.createUser: $name, $createdAt, $avatar');
+      print('------------------------------------');
+
       await _remoteDataSource.createUser(
           name: name, createdAt: createdAt, avatar: avatar);
       return const Right(null);
